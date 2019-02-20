@@ -15,10 +15,8 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from collections import namedtuple
 from inspect import Parameter
 from typing import Any, Callable, NewType, Optional
-
 from molten import DependencyResolver, Settings
 
 try:
@@ -33,9 +31,7 @@ class CouchbaseClusterComponent:
     component.
 
     Your settings dictionary must contain a ``cluster_host``, ``cluster_user``,
-    ``cluster_password``. Additionally, you may
-    provide a ``database_engine_params`` setting representing
-    args that are passed to couchbase.Cluster.
+    ``cluster_password``. Setting representing args that are passed to couchbase.Cluster.
 
     Examples:
 
